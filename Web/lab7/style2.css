@@ -1,0 +1,134 @@
+.hero-div {
+  height: 400px;
+  width: 600px;
+  background-color: #ddd8b8;
+  margin: 0 auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.menu-button {
+  padding: 3px;
+  margin: 5px 4px;
+  width: 100px;
+  text-wrap: nowrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+}
+.block {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 14px;
+  box-shadow: 0px 0px 4px gray;
+  margin-left: 15px;
+}
+
+.block.show {
+  opacity: 1;
+}
+input {
+  height: 20px;
+  margin-top: 5px;
+}
+select {
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+/* task 3*/
+.tree {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sub-tree {
+  width: 100px;
+  border-radius: 3px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.tree > div {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #ddd8b8;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px black;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sub-tree > div {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 3px;
+  border-radius: 3px;
+}
+div > span {
+  display: flex;
+  background-color: #d99361;
+  width: 100px;
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px black;
+  margin-left: 5px;
+}
+.tree > div:hover,
+.sub-tree > div:hover {
+  background-color: #f1f1f1;
+}
+/* 4 task */
+.tab-btn {
+  padding: 3px 20px;
+  background-color: darkmagenta;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  float: left;
+  transition: transform 0.3s ease;
+}
+.tabsInfo {
+  display: none;
+}
+
+.tab-btn.active {
+  background-color: rgb(88, 71, 134);
+  animation-name: buttonPop;
+  animation-duration: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tabsInfo {
+  clear: both;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 388px;
+  height: 50px;
+  background-color: rgb(253, 253, 253);
+}
+
+.tabsInfo:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+@keyframes buttonPop {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

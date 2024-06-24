@@ -1,0 +1,33 @@
+.main-tr-light-container {
+  display: flex;
+  margin: 10px;
+}
+.tr-light-button {
+  margin: 4px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#traffic-light {
+  margin-left: 14px;
+}
+#traffic-light-status {
+  color: black;
+  font-size: 25px;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.switch-buttons {
+  margin: 4px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}

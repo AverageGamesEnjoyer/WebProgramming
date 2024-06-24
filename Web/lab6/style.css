@@ -1,0 +1,309 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-button {
+  background-color: black;
+  color: aliceblue;
+  padding: 10px 30px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.menu-button:hover {
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-start;
+  margin-top: 30px;
+  padding: 0;
+}
+
+#product-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#product-name,
+#product-price,
+#product-img,
+#save-btn {
+  padding: 3px;
+  margin-left: 7px;
+}
+
+#product-img {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#save-btn {
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+#save-btn:hover {
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  background-color: rgba(189, 179, 179, 0.2);
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.product-item:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.item-img {
+  width: 260px;
+  height: 220px;
+  margin-bottom: 5px;
+}
+
+.item-name,
+.item-price {
+  margin-bottom: 6px;
+  width: auto;
+  cursor: pointer;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-delete {
+  padding: 7px;
+  border: none;
+  background-color: #2b1414;
+  cursor: pointer;
+  color: white;
+  width: 120px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item-delete:hover {
+  background-color: brown;
+  transition: 0.4s;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  padding: 5px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#do-filter-btn {
+  padding: 4px 16px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-button {
+    padding: 7px 20px;
+  }
+
+  .item-img {
+    width: 200px;
+    height: 160px;
+  }
+
+  .hero-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-button {
+    margin: 0;
+    padding: 1px 10px;
+    font-size: 8px;
+    text-wrap: wrap;
+  }
+
+  .hero-list {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  #product-name,
+  #product-price,
+  #product-img,
+  #save-btn {
+    padding: 3px;
+    margin-left: 7px;
+  }
+
+  #product-img {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .hero-list {
+    justify-content: center;
+  }
+}
+/* TASK 2 STYLES */
+.tasks-container {
+  width: 320px;
+  background-color: rgb(177 134 3 / 30%);
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+
+.add-button,
+.sort-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: #9cafaa;
+  font-weight: 400;
+  margin: 0px 9px 0px 10px;
+}
+
+.task-card {
+  width: 290px;
+  background-color: #fffcf3;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px rgb(156, 175, 170, 0.7);
+  position: relative;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.task-card:hover {
+  box-shadow: 1px 1px 9px #9cafaa;
+  transition: 0.3s;
+}
+
+.task-card .task-icon {
+  position: absolute;
+  top: 16%;
+  right: 1px;
+  transform: translateY(-50%);
+  font-size: 23px;
+  font-weight: bold;
+  color: green;
+}
+
+.task-card:hover {
+  background-color: #f7f7f7;
+}
+
+
+.task-name {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 8px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.deadline-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.task-deadline {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.delete-task-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 4px 4px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: #96aca6;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+.task-checkbox {
+  position: absolute;
+  left: 260px;
+  top: 6px;
+}
+.card-completed,
+.card-completed:hover {
+  box-shadow: 1px 1px 10px green;
+  transition: 0.3s;
+}
+
+.name-completed {
+  text-decoration: line-through;
+}

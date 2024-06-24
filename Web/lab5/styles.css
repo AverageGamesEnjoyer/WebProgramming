@@ -1,0 +1,93 @@
+.hidden {
+  display: none;
+}
+#or-bulb,
+#es-bulb,
+#led-bulb {
+  margin: 4px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+h1 {
+  margin-left: 3px;
+  color: white;
+}
+#bulb-container {
+  margin: 10px 3px;
+}
+.switch-btn {
+  position: absolute;
+  bottom: 170px;
+  margin-left: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* body {
+  background-color: #333;
+} */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.clock {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#seconds {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.calendar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+input {
+  padding: 5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
+}
+#countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.countdown-button {
+
+    margin-left: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#countdown-result {
+   text-align: center;
+}
+.bth-container {
+  display: flex;
+  flex-direction: column;
+}
